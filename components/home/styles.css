@@ -1,23 +1,13 @@
 .hero-slider {
   height: 100dvh;
+  position: relative;
 }
 
 .hero-image {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  /* Imagem padrão (mobile-first) */
-  background-image: url('https://coisasdobrasil.com.br/wp-content/uploads/2025/04/cb-banner-home-linha-infantil-giz-scaled-2-2.webp');
-}
-
-/* Desktop */
-@media (min-width: 768px) {
-  .hero-image {
-    background-image: url('https://coisasdobrasil.com.br/wp-content/uploads/2019/10/cb-banner-home-linha-infantil-giz-scaled-2.webp');
-  }
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay {
@@ -28,13 +18,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .text-container {
   margin-bottom: auto;
   margin-left: auto;
   padding: 12px;
+  z-index: 10;
 }
 
 .hero-slider h2 {
