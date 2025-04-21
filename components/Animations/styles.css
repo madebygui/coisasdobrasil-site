@@ -1,0 +1,19 @@
+.animation-slide-text a {
+  @apply text-black text-5xl font-bold relative cursor-pointer;
+}
+
+.animation-slide-text a {
+  background-image: linear-gradient(to right, #f7c100 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.animation-slide-text a:hover {
+  background-position: 0;
+}
