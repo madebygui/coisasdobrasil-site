@@ -3,7 +3,7 @@
 import { Modal, ModalBody, ModalContent, ModalFooter, useDisclosure } from '@heroui/modal';
 import { useEffect } from 'react';
 import { X } from 'lucide-react';
-import './styles.css';
+import styles from './Menu.module.css';
 import { HoverTextSlide } from '@/components/Animations/HoverTextSlide';
 
 interface Props {
@@ -77,24 +77,24 @@ export function Menu({ open, handleCloseAction }: Props) {
               </ModalBody>
               <ModalFooter className='flex justify-start p-12'>
                 <div className='grid grid-cols-2 gap-4'>
-                  <a className='nav-link-footer-container group'>
-                    <span className='nav-link-footer'>Sobre</span>
+                  <a className={`${styles.navLinkFooterContainer} group`}>
+                    <span className={styles.navLinkFooter}>Sobre</span>
                   </a>
 
-                  <a className='nav-link-footer-container group'>
-                    <span className='nav-link-footer'>Sob medida</span>
+                  <a className={`${styles.navLinkFooterContainer} group`}>
+                    <span className={styles.navLinkFooter}>Sob medida</span>
                   </a>
 
-                  <a className='nav-link-footer-container group'>
-                    <span className='nav-link-footer'>Blog</span>
+                  <a className={`${styles.navLinkFooterContainer} group`}>
+                    <span className={styles.navLinkFooter}>Blog</span>
                   </a>
 
-                  <a className='nav-link-footer-container group'>
-                    <span className='nav-link-footer'>Download</span>
+                  <a className={`${styles.navLinkFooterContainer} group`}>
+                    <span className={styles.navLinkFooter}>Download</span>
                   </a>
 
-                  <a className='nav-link-footer-container group'>
-                    <span className='nav-link-footer'>Contato</span>
+                  <a className={`${styles.navLinkFooterContainer} group`}>
+                    <span className={styles.navLinkFooter}>Contato</span>
                   </a>
                 </div>
               </ModalFooter>

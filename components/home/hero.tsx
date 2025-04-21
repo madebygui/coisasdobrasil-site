@@ -1,12 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import './styles.css';
+import styles from './Home.module.css';
 
 export function Hero() {
   return (
-    <section className='hero-slider' aria-label='Banner principal'>
-      <div className='hero-image'>
+    <section className={styles.heroSlider} aria-label='Banner principal'>
+      <div className={styles.heroImage}>
         <Image
           src='/images/banner-home-1.webp'
           alt='Banner linha infantil'
@@ -14,10 +14,10 @@ export function Hero() {
           priority
           style={{ objectFit: 'cover' }}
         />
-        <div className='overlay'>
-          <div className='text-container'>
-            <h3 className='description'>LANÇAMENTO 2024 | Linha Infantil</h3>
-            <h2 className='title'>Giz</h2>
+        <div className={styles.overlay}>
+          <div className={styles.textContainer}>
+            <h3>LANÇAMENTO 2024 | Linha Infantil</h3>
+            <h2>Giz</h2>
           </div>
         </div>
       </div>

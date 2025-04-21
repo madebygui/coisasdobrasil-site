@@ -1,9 +1,9 @@
-.hero-slider {
+.heroSlider {
   height: 100dvh;
   position: relative;
 }
 
-.hero-image {
+.heroImage {
   height: 100%;
   width: 100%;
   position: relative;
@@ -23,14 +23,14 @@
   left: 0;
 }
 
-.text-container {
+.textContainer {
   margin-bottom: auto;
   margin-left: auto;
   padding: 12px;
   z-index: 10;
 }
 
-.hero-slider h2 {
+.heroSlider h2 {
   font-family: Arial, sans-serif;
   font-weight: 700;
   font-size: clamp(40px, 8vw, 80px);
@@ -38,7 +38,7 @@
   margin: 0;
 }
 
-.hero-slider h3 {
+.heroSlider h3 {
   font-family: Arial, sans-serif;
   font-weight: 500;
   font-size: 14px;

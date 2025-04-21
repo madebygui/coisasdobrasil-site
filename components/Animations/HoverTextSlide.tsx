@@ -1,4 +1,4 @@
-import './styles.css';
+import styles from './Animation.module.css';
 import React from 'react';
 
 interface Props extends React.HTMLAttributes<HTMLAnchorElement> {
@@ -7,7 +7,7 @@ interface Props extends React.HTMLAttributes<HTMLAnchorElement> {
 
 export const HoverTextSlide = ({ text, ...rest }: Props) => {
   return (
-    <div className='animation-slide-text'>
+    <div className={styles.animationSlideText}>
       <a {...rest}>{text}</a>
     </div>
   );

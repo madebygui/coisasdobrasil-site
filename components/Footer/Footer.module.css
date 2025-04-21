@@ -1,7 +1,7 @@
-.footer-p {
+.footerP {
   @apply text-neutral-300 text-base mb-0 font-normal;
 }
 
-.footer-title {
+.footerTitle {
   @apply text-white text-[11px] mb-5 font-bold;
 }
