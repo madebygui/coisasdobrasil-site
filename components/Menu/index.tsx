@@ -69,10 +69,10 @@ export function Menu({ open, handleCloseAction }: Props) {
                 </div>
 
                 <div className='flex flex-col gap-4 p-8'>
-                  <HoverTextSlide text='Home' />
-                  <HoverTextSlide text='Produtos' />
-                  <HoverTextSlide text='Portfólio' />
-                  <HoverTextSlide text='Contato' />
+                  <HoverTextSlide text='Home' href='/' />
+                  <HoverTextSlide text='Produtos' href='/' />
+                  <HoverTextSlide text='Portfólio' href='/portfolio' />
+                  <HoverTextSlide text='Contato' href='/' />
                 </div>
               </ModalBody>
               <ModalFooter className='flex justify-start p-12'>

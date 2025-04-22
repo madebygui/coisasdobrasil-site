@@ -10,7 +10,7 @@ export function Header() {
 
   return (
     <>
-      <header className='flex justify-between items-center gap-4 max-w-7xl mx-auto p-4'>
+      <header className='flex justify-between items-center gap-4 max-w-7xl w-full mx-auto p-4'>
         <Image alt='Logo' height={70} src='/images/logo-pb.png' width={211} />
 
         <div className='flex gap-2 items-center'>
